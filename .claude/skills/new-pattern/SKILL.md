@@ -98,7 +98,19 @@ public class DEMO_CLASS implements DefaultPatternTesting {
 
 Read `src/main/java/Main.java`. Add the new import and instantiate `DEMO_CLASS` inside the `patterns` list, after the last existing entry.
 
-## Step 5 — Confirm
+## Step 5 — Update root README.md
+
+Read `README.md` at the repository root. Find the `## Implemented Patterns` table and add a new row for the pattern, using the format:
+
+```
+| <Pattern Name> | <Category> | `PATTERN_PACKAGE/` |
+```
+
+Where `<Category>` is one of: Creational, Structural, or Behavioral — determined by the GoF classification of the pattern.
+
+Add the row after the last existing row in the table. Do not modify any other part of the README.
+
+## Step 6 — Confirm
 
 After creating all files, print a summary:
 
@@ -113,6 +125,7 @@ Files created:
   - ...
   - DEMO_CLASS.java
 Main.java updated: yes
+README.md updated: yes
 ```
 
 Then tell the user: "When you're ready to implement the solution, the next step is to create the concrete classes inside `PATTERN_PACKAGE/` following the structure described in `README.md`."
