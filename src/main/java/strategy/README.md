@@ -1,5 +1,8 @@
 # Strategy Pattern
 
+> **Before reading the solution, look at the original problem first.**
+> The code in [`originalproblem/`](./originalproblem/) shows what the code looks like *before* applying the pattern — understand the pain point before seeing the fix.
+
 ## Intent
 
 **Strategy** is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.

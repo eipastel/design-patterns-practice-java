@@ -42,6 +42,7 @@ Create the following files. All Java files must have proper `package` declaratio
 
 Write in English. Sections (follow Refactoring Guru tone and structure):
 - `# <Pattern Name> Pattern`
+- A blockquote notice right after the title: `> **Before reading the solution, look at the original problem first.** The code in [\`originalproblem/\`](./originalproblem/) shows what the code looks like *before* applying the pattern — understand the pain point before seeing the fix.`
 - `## Intent` — one clear sentence on what the pattern does
 - `## Problem it solves` — concrete pain point, tied to the domain you chose
 - `## Solution` — how the pattern addresses the problem
