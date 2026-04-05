@@ -1,25 +1,25 @@
 package factorymethod;
 
 import runner.DefaultPatternTesting;
-import factorymethod.originalproblem.LogisticsManager;
 
 public class FactoryMethodDemo implements DefaultPatternTesting {
 
     @Override
     public String getName() {
-        return "Factory Method — Logistics Delivery System (Original Problem)";
+        return "Factory Method — Logistics Delivery System";
     }
 
     @Override
     public void execute() {
-        LogisticsManager manager = new LogisticsManager();
-
-        manager.scheduleDelivery("truck", "Construction Materials", "São Paulo");
+        Logistics road = new RoadLogistics();
+        road.planDelivery("Construction Materials", "São Paulo");
         System.out.println();
 
-        manager.scheduleDelivery("ship", "Electronics Containers", "Rotterdam");
+        Logistics sea = new SeaLogistics();
+        sea.planDelivery("Automobiles", "Hamburg");
         System.out.println();
 
-        manager.scheduleDelivery("airplane", "Medical Supplies", "Tokyo");
+        Logistics air = new AirLogistics();
+        air.planDelivery("Medical Supplies", "Tokyo");
     }
 }

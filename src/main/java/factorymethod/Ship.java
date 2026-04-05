@@ -1,6 +1,6 @@
-package factorymethod.originalproblem;
+package factorymethod;
 
-public class Ship {
+public class Ship implements Transport {
 
     private final String vesselName;
 
@@ -8,6 +8,7 @@ public class Ship {
         this.vesselName = vesselName;
     }
 
+    @Override
     public void deliver(String cargo, String destination) {
         System.out.println("[Ship " + vesselName + "] Sailing cargo '" + cargo + "' to " + destination + " via sea route.");
     }

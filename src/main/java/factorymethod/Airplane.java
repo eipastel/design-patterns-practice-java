@@ -1,6 +1,6 @@
-package factorymethod.originalproblem;
+package factorymethod;
 
-public class Airplane {
+public class Airplane implements Transport {
 
     private final String flightNumber;
 
@@ -8,6 +8,7 @@ public class Airplane {
         this.flightNumber = flightNumber;
     }
 
+    @Override
     public void deliver(String cargo, String destination) {
         System.out.println("[Airplane " + flightNumber + "] Flying cargo '" + cargo + "' to " + destination + " by air.");
     }

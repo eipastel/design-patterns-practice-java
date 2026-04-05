@@ -3,7 +3,7 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Stock implements Observable<StockObserver> {
+public class Stock implements Observable {
 
     private final String symbol;
     private double price;

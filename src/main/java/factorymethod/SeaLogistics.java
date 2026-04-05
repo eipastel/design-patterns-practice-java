@@ -1,9 +1,9 @@
 package factorymethod;
 
-public class RoadLogistics extends Logistics {
+public class SeaLogistics extends Logistics {
 
     @Override
     protected Transport createTransport() {
-        return new Truck("ABC-1234");
+        return new Ship("Ever Given");
     }
 }
