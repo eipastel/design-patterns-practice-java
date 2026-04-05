@@ -37,4 +37,4 @@ Projeto de estudo de Design Patterns em Java. Cada padrão é implementado como 
 
 | Padrão | Pacote | Classe de entrada |
 |--------|--------|-------------------|
-| Observer | `observer` | `WeatherStation` |
+| Observer | `observer` | `ObserverDemo` |

@@ -1,11 +1,13 @@
 import runner.DefaultPatternTesting;
 import strategy.StrategyPatternDemo;
+import observer.ObserverDemo;
 
 import java.util.List;
 
 void main() {
     List<DefaultPatternTesting> patterns = List.of(
-            new StrategyPatternDemo()
+            new StrategyPatternDemo(),
+            new ObserverDemo()
     );
 
     for(DefaultPatternTesting pattern : patterns) {
