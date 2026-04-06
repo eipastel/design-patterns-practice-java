@@ -11,6 +11,7 @@ Each pattern lives in its own package, has its logic encapsulated, and is execut
 | Strategy | Behavioral | `strategy/` |
 | Observer | Behavioral | `observer/` |
 | Factory Method | Creational | `factorymethod/` |
+| Decorator | Structural | `decorator/` |
 
 ## Study workflow
 
