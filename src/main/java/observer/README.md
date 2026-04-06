@@ -8,7 +8,7 @@ Define a one-to-many dependency so that when one object changes state, all its d
 
 ## Problem it solves
 
-In a stock price monitoring system, whenever a stock's price changes, several components need to react: a dashboard must refresh its display, an email alert service must notify investors, and a portfolio tracker must recalculate returns. Without Observer, the `Stock` class ends up directly calling each of these services — it becomes a God class that must know every single subscriber, accumulates imports and dependencies, and must be modified every time a new component wants to listen for price changes.
+In a smart home system, whenever a temperature sensor records a new reading, several components need to react: a thermostat controller must decide whether to heat or cool the room, a mobile alert service must push a notification when the change is drastic, and an energy monitor must log estimated HVAC usage. Without Observer, the `TemperatureSensor` class ends up directly calling each of these services — it becomes a God class that must know every single consumer, accumulates imports and dependencies, and must be modified every time a new smart home component wants to listen for sensor readings.
 
 ## Solution
 
