@@ -9,7 +9,7 @@
 
 ## Problem it solves
 
-Imagine you have a class that needs to perform a task in different ways depending on the context — for example, processing a payment via credit card, Pix, or boleto. The naive solution is a large `if/else` or `switch` inside the class itself. Over time, each new payment method requires modifying that class, breaking the **Open/Closed Principle** (open for extension, closed for modification).
+Imagine you have a class that needs to perform a task in different ways depending on the context — for example, building a workout plan for weight loss, muscle gain, or endurance. The naive solution is a large `if/else` or `switch` inside the class itself. Over time, each new training goal requires modifying `WorkoutPlanner`, breaking the **Open/Closed Principle** (open for extension, closed for modification).
 
 ## Solution
 
