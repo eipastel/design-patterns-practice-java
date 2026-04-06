@@ -71,7 +71,16 @@ Also rewrite `src/main/java/$ARGUMENTS/originalproblem/README.md` for the new do
 - `### Direct consequences` — 3–4 concrete pains.
 - `## Files` — bullet list describing each new Java file.
 
-### 6 — Update the demo class
+### 6 — Update the main pattern README
+
+Rewrite the **"Problem it solves"** section of `src/main/java/$ARGUMENTS/README.md` to describe the new domain. Keep all other sections (Intent, Solution, Structure, When to use, Relations, Reference) intact — only replace the paragraph(s) that mention the old domain's concrete classes and scenario.
+
+The updated section should:
+- Describe the new domain's scenario (who the actors are, what state changes).
+- Name the new concrete consumers/participants (matching the new `originalproblem/` files).
+- End with the same conclusion about why the pattern solves it.
+
+### 7 — Update the demo class
 
 Rewrite the demo class's `execute()` method to:
 - Import only from `$ARGUMENTS.originalproblem.*`
@@ -81,11 +90,11 @@ Rewrite the demo class's `execute()` method to:
 
 Keep `implements DefaultPatternTesting` and the class declaration intact.
 
-### 7 — Verify compilation
+### 8 — Verify compilation
 
 Run `mvn compile -q`. If it fails, read the error, fix the demo class, and re-run.
 
-### 8 — Report
+### 9 — Report
 
 Print a summary:
 
@@ -107,6 +116,7 @@ New originalproblem files:
   - originalproblem/<NewFile2>.java
   ...
 
+README.md updated: "Problem it solves" section rewritten for new domain.
 Demo class updated: <DemoClass>.java
 Compilation: OK
 
